@@ -30,7 +30,7 @@ jobs:
     # Step 2 - Build the project using Apache Ant. This is based 
     # off of build.xml from the root of the repository
     - name: Build with Ant
-      run: ant -noinput -buildfile build.xml
+      run: ant -verbose -buildfile build.xml
   run-test-project:
     # specify the server OS to use
     runs-on: ubuntu-latest
@@ -45,4 +45,4 @@ jobs:
       # Step 2 - Build the project using Apache Ant. This is based
       # off of build.xml from the root of the repository
       - name: Build with Ant
-        run: ant -noinput -buildfile build-test-project.xml
+        run: ant -verbose -buildfile build-test-project.xml
