@@ -8,6 +8,7 @@
 # https://github.com/junit-team/junit4/wiki/Getting-started-–-Ant
 # https://ant.apache.org/manual/Tasks/junit.html
 # https://ant.apache.org/manual/Tasks/javac.html
+# https://ant.apache.org/manual/Tasks/copy.html
 
 name: CI for ChessMSWE
 
@@ -37,7 +38,9 @@ jobs:
       run: ant -verbose -buildfile build.xml compile-src-project
     - name: 5. Create build test directory (if not exists)
       run: ant -verbose -buildfile build.xml initialize-build-test-folder
-    - name: 6. Compile test project with Ant
+    - name: 6. Create test pgn files for JUnit4 Tests
+      run: ant -verbose -buildfile build.xml initialize-pgn-test-source
+    - name: 7. Compile test project with Ant
       run: ant -verbose -buildfile build.xml compile-test-project
-    - name: 7. Run JUnit4 Tests
+    - name: 8. Run JUnit4 Tests
       run: ant -verbose -buildfile build.xml run-junit-tests
