@@ -113,4 +113,5 @@ jobs:
       run: ant -buildfile build.xml
 
     - name: Run Tests with Ant
-      run: ant test
+      run: ant test```
+Testing summary document [261P Project (1)-2.pdf](https://github.com/ahmedryasser/ChessMSWE/files/15257982/261P.Project.1.-2.pdf)
