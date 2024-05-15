@@ -2,6 +2,7 @@
 
 ![GitHub Repo](https://img.shields.io/github/repo-size/ahmedryasser/ChessMSWE?style=flat-square)
 ![GitHub License](https://img.shields.io/github/license/ahmedryasser/ChessMSWE?style=flat-square)
+![image](https://github.com/ahmedryasser/ChessMSWE/assets/56661044/0a11d325-e0ed-4031-ba42-85c03a1d8da4)
 
 BlackWidow-Chess is a fully functional chess game written in Java. It features a graphical user interface implemented using AWT and Swing, allowing two players to play a game of chess against each other on a single machine. The game also provides features like tracking taken pieces and move history. In this Project me and my team tested the code bbase using all of the below tests.
 
